@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.7 on win32)" generated="20210216 13:48:28.265" rpa="false">
+<suite id="s1" name="Lowcode-Ta" source="C:\Users\narhieem\code\lowcode-ta">
+<suite id="s1-s1" name="Tests" source="C:\Users\narhieem\code\lowcode-ta\tests">
+<suite id="s1-s1-s1" name="Eyes Demo" source="C:\Users\narhieem\code\lowcode-ta\tests\eyes_demo.robot">
+<kw name="Suite Setup" type="setup">
+<kw name="Set Api Key" library="applitools_eyes_setup">
+<arguments>
+<arg>${api_key}</arg>
+</arguments>
+<status status="PASS" starttime="20210216 13:48:32.702" endtime="20210216 13:48:32.703"></status>
+</kw>
+<status status="PASS" starttime="20210216 13:48:32.701" endtime="20210216 13:48:32.704"></status>
+</kw>
+<test id="s1-s1-s1-t1" name="Eyes Test">
+<kw name="Open Eyes Session" library="applitools_eyes_setup">
+<status status="PASS" starttime="20210216 13:48:32.715" endtime="20210216 13:48:35.829"></status>
+</kw>
+<kw name="Navigate To Page" library="applitools_eyes_setup">
+<arguments>
+<arg>https://personal-zl0nigog.outsystemscloud.com/OSMDb_EN/</arg>
+</arguments>
+<status status="PASS" starttime="20210216 13:48:35.829" endtime="20210216 13:48:37.130"></status>
+</kw>
+<kw name="Take Screenshot Of Window" library="applitools_eyes_setup">
+<msg timestamp="20210216 13:48:49.092" level="INFO">{'event': "Exception raising during capturing DOM Json. Passing...\n Got next error: ''", 'level': 'warning', 'timestamp': '2021-02-16 13:48:41.662980', '_thread_name': 'MainThread'}
+{'event': "Exception raising during capturing DOM Json. Passing...\n Got next error: ''", 'level': 'warning', 'timestamp': '2021-02-16 13:48:48.956288', '_thread_name': 'MainThread'}</msg>
+<status status="PASS" starttime="20210216 13:48:37.130" endtime="20210216 13:48:49.092"></status>
+</kw>
+<kw name="Close Eyes Session" library="applitools_eyes_setup">
+<msg timestamp="20210216 13:48:50.284" level="FAIL">DiffsFoundError: 'Outsystems Batch' of 'Outsystems Demo'. See details at https://eyes.applitools.com/app/batches/00000251788824685127/00000251788824685002?accountId=Y5iqV78dp06aUEwZkx1FzA~~</msg>
+<status status="FAIL" starttime="20210216 13:48:49.092" endtime="20210216 13:48:50.284"></status>
+</kw>
+<status status="FAIL" starttime="20210216 13:48:32.704" endtime="20210216 13:48:50.285" critical="yes">DiffsFoundError: 'Outsystems Batch' of 'Outsystems Demo'. See details at https://eyes.applitools.com/app/batches/00000251788824685127/00000251788824685002?accountId=Y5iqV78dp06aUEwZkx1FzA~~</status>
+</test>
+<status status="FAIL" starttime="20210216 13:48:28.326" endtime="20210216 13:48:50.292"></status>
+</suite>
+<status status="FAIL" starttime="20210216 13:48:28.322" endtime="20210216 13:48:50.301"></status>
+</suite>
+<status status="FAIL" starttime="20210216 13:48:28.269" endtime="20210216 13:48:50.303"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Lowcode-Ta">Lowcode-Ta</stat>
+<stat pass="0" fail="1" id="s1-s1" name="Tests">Lowcode-Ta.Tests</stat>
+<stat pass="0" fail="1" id="s1-s1-s1" name="Eyes Demo">Lowcode-Ta.Tests.Eyes Demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
