@@ -14,6 +14,8 @@ ${MovieTable_Row_1_PlotSummary}=                //table[@TAID='MovieTable']/tbod
 ${Txt_Movie_PlotSummary}=                       //textarea[@TAID="Movie_PlotSummary"]
 ${Btn_Movie_Save}=                              //input[@TAID="Movie_Save"]
 ${Link_New_Movie}=                              //span[@TAID="Movies_NewMovie"]
+${Inp_Search}=                                  //input[@TAID="Movies_Search"]
+${Btn_Movie_Filter}                             //input[@TAID="Movies_Filter"]
 
 # OSMDb / New Movie page
 ${Inp_NewMovie_Title}=                          //input[@TAID="MovieDetail_Title"]
@@ -22,3 +24,12 @@ ${Txt_NewMovie_PlotSummary}=                    //textarea[@TAID="Movie_PlotSumm
 ${Sel_NewMovie_Genre}=                          //select[@TAID="MovieDetail_Genre"]
 ${Inp_NewMovie_GrossTakings}=                   //input[@TAID="MovieDetail_Gross"]
 ${Chk_NewMovie_IsOnDVD}=                        //input[@TAID="MovieDetail_OnDVD"]
+
+# Movie detail page
+${Link_AddCast}=                                //span[@TAID="MovieDetail_Add"]
+${List_CastAndCrew}=                            //span[@class="ListRecords"]
+
+# Add cast/crew to movie page
+${Cmb_Person}=                                  //select[@TAID="AddMovieParticipant_SelectPerson"]
+${Cmb_PersonRole}=                              //select[@TAID="AddMovieParticipant_Role"]
+${Btn_SaveCastOrCrew}                           //input[@TAID="AddMovieParticipant_Save"]
