@@ -10,22 +10,27 @@ ${NewMovie_Title}=                  Fight Club
 ${NewMovie_Year}=                   1999
 ${NewMovie_PlotSummary}=            An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.
 ${NewMovie_GrossTakings}=           37023395
+${AdminUsername}=                   movieadmin_EN
+${AdminPassword}=                   movieadmin
 
 *** Test Cases ***
 Add New Movie
-    Given User Clicks On New Movie Button
+    Given User Logs In As Adminuser
+    And User Clicks On New Movie Button
     When User Fills New Movie Details
     And User Saves New Movie Details
     Then New Movie Is Visible In Movie Table
 
 Edit Movie Plot Summary
-    Given User Selects Movie Details
+    Given User Logs In As Adminuser
+    And User Selects Movie Details
     When User Edits Plot Summary
     And User Saves Movie Details
     Then New Plot Summary Is Visible
 
 Add Crew To Movie
-    Given User Searches For Movie Capote
+    Given User Logs In As Adminuser
+    And User Searches For Movie Capote
     When User Adds Crew To Movie
     Then New Member Of Crew Is Visible
 

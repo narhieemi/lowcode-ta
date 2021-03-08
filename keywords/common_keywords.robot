@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation       
-Resource    ../variables/common_variables.robot
+Resource    ../variables/UI_locators.robot
 Library     OperatingSystem
 Library     applitools_eyes_setup.py
 Library     Browser
@@ -10,6 +10,12 @@ User Logs In
     Click       ${Link_Login}
     Fill Text   ${Inp_Username}     ${username}
     Fill Text   ${Inp_Password}     ${password}
+    Click       ${Btn_LogIn}
+
+User Logs In As Adminuser
+    Click       ${Link_Login}
+    Fill Text   ${Inp_Username}     ${AdminUsername}
+    Fill Text   ${Inp_Password}     ${AdminPassword}
     Click       ${Btn_LogIn}
 
 User Selects Movie Details
