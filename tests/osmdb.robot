@@ -29,6 +29,13 @@ Add Crew To Movie
     When User Adds Crew To Movie
     Then New Member Of Crew Is Visible
 
+Add User Review To Movie
+    Given User Logs In
+    And User Selects Movie Details
+    When Review Comment Is Added To Movie
+    Then New Review Comment Is Visible
+
+
 *** Keywords ***
 Test Setup
     New Browser    chromium    headless=false
@@ -37,4 +44,7 @@ Test Setup
 
     ${MovieCount}=      Get Element Count       //table[@TAID='MovieTable']/tbody/tr
     Set Test Variable      ${MovieCount}
+
+    Set Test Variable       ${username}     maryjane_EN
+    Set Test Variable       ${password}     maryjane
     

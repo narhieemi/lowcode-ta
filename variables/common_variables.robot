@@ -16,6 +16,7 @@ ${Btn_Movie_Save}=                              //input[@TAID="Movie_Save"]
 ${Link_New_Movie}=                              //span[@TAID="Movies_NewMovie"]
 ${Inp_Search}=                                  //input[@TAID="Movies_Search"]
 ${Btn_Movie_Filter}                             //input[@TAID="Movies_Filter"]
+${Link_Login}=                                  //div[@id="wt20_OutSystemsUIWeb_wt18_block_wtHeader_wtRight_wt18_wtLogin"]
 
 # OSMDb / New Movie page
 ${Inp_NewMovie_Title}=                          //input[@TAID="MovieDetail_Title"]
@@ -28,8 +29,16 @@ ${Chk_NewMovie_IsOnDVD}=                        //input[@TAID="MovieDetail_OnDVD
 # Movie detail page
 ${Link_AddCast}=                                //span[@TAID="MovieDetail_Add"]
 ${List_CastAndCrew}=                            //span[@class="ListRecords"]
+${Txt_Comment}=                                 //textarea[@TAID="Input_Comment"]
+${Btn_Comment}=                                 //input[@TAID="CommentButton"]
+${Txt_ReviewComment}=                           //span[contains(text(), 'Great movie')]
 
 # Add cast/crew to movie page
 ${Cmb_Person}=                                  //select[@TAID="AddMovieParticipant_SelectPerson"]
 ${Cmb_PersonRole}=                              //select[@TAID="AddMovieParticipant_Role"]
 ${Btn_SaveCastOrCrew}                           //input[@TAID="AddMovieParticipant_Save"]
+
+# Login page
+${Inp_Username}=                                //input[@TAID="UserNameInput"]
+${Inp_Password}=                                //input[@TAID="PasswordInput"]
+${Btn_LogIn}=                                   //input[@TAID="LoginButton"]

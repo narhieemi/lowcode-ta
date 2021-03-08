@@ -6,6 +6,12 @@ Library     applitools_eyes_setup.py
 Library     Browser
 
 *** Keywords ***
+User Logs In
+    Click       ${Link_Login}
+    Fill Text   ${Inp_Username}     ${username}
+    Fill Text   ${Inp_Password}     ${password}
+    Click       ${Btn_LogIn}
+
 User Selects Movie Details
     Click   ${MovieTable_Row_1_Title}
 
@@ -51,3 +57,10 @@ User Adds Crew To Movie
 
 New Member Of Crew Is Visible
     Get Text    ${List_CastAndCrew}     *=      Janet Tebrooke
+
+Review Comment Is Added To Movie
+    Fill Text   ${Txt_Comment}      Great movie
+    Click       ${Btn_Comment}
+
+New Review Comment Is Visible
+    Get Text    ${Txt_ReviewComment}     *=      Mary Jane: Great movie
